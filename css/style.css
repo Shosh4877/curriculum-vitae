@@ -96,13 +96,13 @@ main {
     }
 
     .work-experience {
-        border: 3px solid red;
+        border: 3px var(--primary-color);
         border-radius: 35px;
         margin-bottom: 20px;
     }
 
     .voluntary-work {
-        border: 3px solid red;
+        border: 3px var(--primary-color);
         border-radius: 35px;
         /* margin-bottom: 20px; */
     }
