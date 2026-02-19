@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./css/fontawesome-brands.min.css">
+    <link rel="stylesheet" href="./css/fontawesome-solid.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/bootstrap.bundle.min.js" defer></script>
@@ -68,6 +69,12 @@
                             Hallo iedereen en welkom op mijn CV.
                             Als iemand die gemakkelijk contact legt, een positieve uitstraling heeft en ondernemend is,
                             ben ik voortdurend op zoek naar nieuwe kansen en uitdagingen.
+                        </p>
+                        <p>
+                            <span class="fa-stack" style="vertical-align: top;">
+                                <i class="fa-regular fa-circle fa-stack-2x"></i>
+                                <i id="btn-play" class="fa-solid fa-play fa-stack-1x"></i>
+                            </span>                             
                         </p>
                     </div>
                 </div>
@@ -177,6 +184,24 @@
     <footer>
         footer
     </footer>
+
+    <audio src="./music/alicia-keys-girl-on-fire.mp3" id="song-1"></audio>
+    <script>
+        const song1 = document.getElementById("song-1");
+        const btnPlay = document.getElementById("btn-play");
+
+        btnPlay.onclick = function() {
+            if (song1.paused) {
+                song1.play();
+                btnPlay.classList.replace("fa-play", "fa-pause");
+            } else {
+                song1.pause();
+                btnPlay.classList.replace("fa-pause", "fa-play");
+            }
+            
+        }
+ 
+    </script>
 
 </body>
 
