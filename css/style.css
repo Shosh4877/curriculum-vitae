@@ -3,8 +3,21 @@
     src: url(../webfonts/PoiretOne-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../webfonts/Lato-Regular.ttf);
+}
+
+:rootx {
+    --primary-color: #6CA651;
+    --secondary-color: #ba4e5b;
+    --third-color: #f6f0d7;
+}
+
 :root {
-  --primary-color: #94606a;
+    --primary-color: #6ca651;
+    --secondary-color: #c40060;
+    --third-color: #fffaf0;
 }
 
 h1 {
@@ -16,11 +29,14 @@ h1 {
 
 h2 {
     text-align: center;
+    font-family: "Lato-Regular";
+    margin-bottom: 20px;
 }
 
 h3 {
     text-align: center;
     font-size: medium;
+    font-family: "Lato-Regular";
 }
 
 header {
@@ -39,11 +55,15 @@ main {
         border: 3px solid var(--primary-color);
         border-radius: 35px;
 
-            p {
+        p {
 
-                display: flex;
-                justify-content: center;
-            }
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            color: #ba4e5b;
+        }
     }
 
     .introduction-photo {
@@ -52,11 +72,12 @@ main {
         /* margin: 20px 0 20px 0; */
     }
 
-    .introduction-photo > div {
+    .introduction-photo>div {
         position: absolute;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(1.2);
         left: 50%;
         top: 50%;
+        z-index: 1;
     }
 
     .introduction-education {
@@ -78,6 +99,11 @@ main {
         border: 3px solid var(--primary-color);
         border-radius: 35px;
         margin-bottom: 20px;
+
+        .fa-regular, #btn-play {
+            color: #ba4e5b;
+        }
+
     }
 
     .photo-iris {
@@ -93,16 +119,21 @@ main {
         border: 3px solid var(--primary-color);
         border-radius: 35px;
         margin-bottom: 20px;
+
+        img {
+            /* border: 10px solid #ba4e5b; */
+            height: 50px;
+        }
     }
 
     .work-experience {
-        border: 3px var(--primary-color);
+        border: 3px solid var(--primary-color);
         border-radius: 35px;
         margin-bottom: 20px;
     }
 
     .voluntary-work {
-        border: 3px var(--primary-color);
+        border: 3px solid var(--primary-color);
         border-radius: 35px;
         /* margin-bottom: 20px; */
     }
