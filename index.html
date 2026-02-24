@@ -75,7 +75,7 @@
                             <span class="fa-stack" style="vertical-align: top;">
                                 <i class="fa-regular fa-circle fa-stack-2x"></i>
                                 <i id="btn-play" class="fa-solid fa-play fa-stack-1x"></i>
-                            </span>                             
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -91,7 +91,8 @@
                         <ul>
                             <li>
                                 <img src="./images/design-thinking_11175787.png" alt="design-thinking">
-                                Design thinking</li>
+                                Design thinking
+                            </li>
                             <li>Front End Coding</li>
                             <li>Doorzettingsvermogen</li>
                             <li>Leergierig</li>
@@ -154,7 +155,7 @@
                     </div>
                     <!-- div.row>div.col-md-6*2>-->
                     <div class="row">
-                        <div class="md-12 col-md-6">
+                        <div class="col-md-6">
                             <h4>Gastvrouw informatieplein</h4>
                             <p>Forumbibliotheek Selwerd 2025</p>
                             <ul>
@@ -168,7 +169,7 @@
                             </ul>
                         </div>
 
-                        <div class="md-12 col-md-6">
+                        <div class="col-md-6">
                             <h4>Contact met en steun aan mensen met dementie en hun naasten</h4>
                             <p>Humanitas 2021</p>
                             <ul>
@@ -182,6 +183,44 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <!-- div.container>div.row>div.col-md-6*2 -->
+            <div class="container refrences">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Referenties</h2>
+                        <div class="col-md-4">
+                            <strong>Lineke Kremer</strong>
+                            <p>Toegepast psycholoog, Job-coach, Trainer</p>
+                            <p>
+                                <a href="tel:0622062513">06-22062513</a>
+                            </p>
+                            <strong>Niels Plutschouw</strong>
+                            <p>Programeur, Docent </p>
+                            <p>
+                                <a href="tel:0644355743">06-44355743</a>
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2>Talen</h2>
+                            <ul>
+                                <li>Nederlands</li>
+                                <li>Engels</li>
+                                <li>Hebreeuws</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -193,7 +232,7 @@
         const song1 = document.getElementById("song-1");
         const btnPlay = document.getElementById("btn-play");
 
-        btnPlay.onclick = function() {
+        btnPlay.onclick = function () {
             if (song1.paused) {
                 song1.play();
                 btnPlay.classList.replace("fa-play", "fa-pause");
@@ -201,9 +240,9 @@
                 song1.pause();
                 btnPlay.classList.replace("fa-pause", "fa-play");
             }
-            
+
         }
- 
+
     </script>
 
 </body>

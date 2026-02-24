@@ -100,7 +100,8 @@ main {
         border-radius: 35px;
         margin-bottom: 20px;
 
-        .fa-regular, #btn-play {
+        .fa-regular,
+        #btn-play {
             color: #ba4e5b;
         }
 
@@ -135,8 +136,23 @@ main {
     .voluntary-work {
         border: 3px solid var(--primary-color);
         border-radius: 35px;
-        /* margin-bottom: 20px; */
+        margin-bottom: 20px;
     }
+
+    .refrences {
+        border: 3px solid var(--primary-color);
+        border-radius: 35px;
+
+        a {
+            color: #ba4e5b;
+        }
+
+        .talen {
+            border: 3px solid var(--primary-color);
+            border-radius: 35px;
+        }
+    }
+
 }
 
 footer {
