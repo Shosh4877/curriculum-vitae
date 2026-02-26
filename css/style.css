@@ -8,34 +8,47 @@
     src: url(../webfonts/Lato-Regular.ttf);
 }
 
-:rootx {
-    --primary-color: #6CA651;
-    --secondary-color: #ba4e5b;
-    --third-color: #f6f0d7;
+@font-face {
+    font-family: "soria-font";
+    src: url(../webfonts/soria-font.ttf);
 }
 
 :root {
+
+    /* color */
     --primary-color: #6ca651;
-    --secondary-color: #c40060;
-    --third-color: #fffaf0;
+    --secondary-color: #f6f0d7;
+
+    /* font-family */
+    --font-family-text: "soria-font", serif;
+    --font-family-title: "soria-font", serif;
+
+    /* corner-frame */
+
 }
 
 h1 {
     color: var(--primary-color);
     text-align: center;
     font-size: 100px;
-    font-family: "PoiretOne-Regular";
+    font-family: "soria-font", serif, sans-serif;
+    font-family: ;
 }
 
 h2 {
     text-align: center;
-    font-family: "Lato-Regular";
+    font-family: "soria-font";
     margin-bottom: 20px;
 }
 
 h3 {
     text-align: center;
     font-size: medium;
+    font-family: "soria-font";
+}
+
+p,
+li {
     font-family: "Lato-Regular";
 }
 
@@ -62,7 +75,7 @@ main {
         }
 
         a {
-            color: #ba4e5b;
+            color: var(--primary-color);
         }
     }
 
@@ -89,20 +102,40 @@ main {
         }
 
         p {
-
             display: flex;
             justify-content: left;
         }
     }
 
     .about-me {
-        border: 3px solid var(--primary-color);
+        /* border: 3px solid var(--primary-color); */
         border-radius: 35px;
         margin-bottom: 20px;
+        position: relative;
+        height: 250px;
+
+
+        .corner-ornament-left {
+            filter: invert(70%) sepia(24%) saturate(876%) hue-rotate(57deg) brightness(81%) contrast(84%);
+            height: 250px;
+            width: 50%;
+            position: absolute;
+            left: 0;
+        }
+
+        .corner-ornament-right {
+            filter: invert(70%) sepia(24%) saturate(876%) hue-rotate(57deg) brightness(81%) contrast(84%);
+            height: 250px;
+            width: 50%;
+            position: absolute;
+            transform: scaleX(-1);
+            right: 0;
+        }
 
         .fa-regular,
         #btn-play {
-            color: #ba4e5b;
+            color: var(--primary-color);
+
         }
 
     }
@@ -134,9 +167,26 @@ main {
     }
 
     .voluntary-work {
-        border: 3px solid var(--primary-color);
-        border-radius: 35px;
+        /* border: 3px solid var(--primary-color); */
+        /* border-radius: 35px; */
         margin-bottom: 20px;
+
+        .corner-ornament-left {
+            filter: invert(70%) sepia(24%) saturate(876%) hue-rotate(57deg) brightness(81%) contrast(84%);
+            height: 250px;
+            width: 50%;
+            position: absolute;
+            left: 0;
+        }
+
+        .corner-ornament-right {
+            filter: invert(70%) sepia(24%) saturate(876%) hue-rotate(57deg) brightness(81%) contrast(84%);
+            height: 250px;
+            width: 50%;
+            position: absolute;
+            transform: scaleX(-1);
+            right: 0;
+        }
     }
 
     .refrences {
