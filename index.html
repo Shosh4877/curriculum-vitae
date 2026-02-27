@@ -130,42 +130,38 @@
         <section>
             <!-- div.container>div.row>div.col-md-12>-->
             <div class="container voluntary-work">
-                <div class="row">
-                    <img src="./images/Corner-Ornament-4-By-RebeccaRead.svg" class="corner-ornament-left"
-                        alt="corner-ornament-left">
-                    <img src="./images/Corner-Ornament-4-By-RebeccaRead.svg" class="corner-ornament-right"
-                        alt="corner-ornament-right">
-                    <div class="col-md-12">
-                        <h2>Vrijwilligerswerk</h2>
-                    </div>
+                <h2 id="voluntary">Vrijwilligerswerk</h2>
+                <div class="row wrap-library">
                     <!-- div.row>div.col-md-6*2>-->
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>Gastvrouw informatieplein</h4>
-                            <p>Forumbibliotheek Selwerd 2025</p>
-                            <ul>
-                                <li>Aanspreekpunt voor bibliotheek/informatieplein bezoekers.</li>
-                                <li>Bezoekers actief aanspreken of ik ze kan helpen.</li>
-                                <li>Op eigen initiatief informatie over het informatieplein geven aan bezoekers.</li>
-                                <li>Contactpersoon zijn namens Forum Groningen voor alle vragen, opmerkingen en
-                                    praktische zaken van partners. (Vereniging Humanitas, WIJ Groningen, SeniorWeb,
-                                    etc.)
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-6">
-                            <h4>Contact met en steun aan mensen met dementie en hun naasten</h4>
-                            <p>Humanitas 2021</p>
-                            <ul>
-                                <li>Samen een leuke activiteit ondernemen zoals langs haar favorite kledingwinkel.</li>
-                                <li>.</li>
-                                <li>.</li>
-                                <li>.</li>
-                            </ul>
-                        </div>
+                    <div class="col-md-6">
+                        <h4>Gastvrouw informatieplein</h4>
+                        <p>Forumbibliotheek Selwerd 2025</p>
+                        <ul id="voluntaryList1">
+                            <li>Aanspreekpunt voor bibliotheek/informatieplein bezoekers.</li>
+                            <li>Bezoekers actief aanspreken of ik ze kan helpen.</li>
+                            <li>Op eigen initiatief informatie over het informatieplein geven aan bezoekers.
+                            </li>
+                            <li>Contactpersoon zijn namens Forum Groningen voor alle vragen, opmerkingen en
+                                praktische zaken van partners. (Vereniging Humanitas, WIJ Groningen, SeniorWeb,
+                                etc.)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 wrap-dementia">
+                        <h4>Contact met en steun aan mensen met dementie en hun naasten</h4>
+                        <p>Humanitas 2021</p>
+                        <ul id="voluntaryList2">
+                            <li>Samen een leuke activiteit ondernemen zoals langs haar favorite kledingwinkel.</li>
+                            <li>.</li>
+                            <li>.</li>
+                            <li>.</li>
+                        </ul>
                     </div>
                 </div>
+                <img src="./images/Corner-Ornament-4-By-RebeccaRead.svg" class="corner-ornament-left1"
+                    alt="corner-ornament-left">
+                <img src="./images/Corner-Ornament-4-By-RebeccaRead.svg" class="corner-ornament-right1"
+                    alt="corner-ornament-right">
             </div>
         </section>
 
@@ -240,17 +236,39 @@
         const song1 = document.getElementById("song-1");
         const btnPlay = document.getElementById("btn-play");
 
-        btnPlay.onclick = function () {
-            if (song1.paused) {
-                song1.play();
-                btnPlay.classList.replace("fa-play", "fa-pause");
-            } else {
-                song1.pause();
-                btnPlay.classList.replace("fa-pause", "fa-play");
-            }
+        if (btnPlay && song1) {
+            btnPlay.onclick = function () {
+                if (song1.paused) {
+                    song1.play();
+                    btnPlay.classList.replace("fa-play", "fa-pause");
+                } else {
+                    song1.pause();
+                    btnPlay.classList.replace("fa-pause", "fa-play");
+                }
 
+            }
         }
 
+        const voluntaryWork = document.querySelector('.voluntary-work');
+        const cornerOrnamentLeft1 = document.querySelector('.corner-ornament-left1');
+        const cornerOrnamentRight2 = document.querySelector('corner-ornament-right1');
+
+        voluntaryWork.addEventListener("mouseover", e => {
+            document.getElementById("voluntaryList1").style.display = "block"
+        })
+
+        voluntaryWork.addEventListener("mouseover", e => {
+            document.getElementById("voluntaryList2").style.display = "block"
+        })
+        cornerOrnamentLeft1.addEventListener("mouseover", e => {
+            
+        })
+
+        cornerOrnamentRight2.addEventListener("mouseover", e=> {
+            
+        })
+
+        
     </script>
 
 </body>

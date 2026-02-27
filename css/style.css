@@ -171,21 +171,29 @@ main {
         /* border-radius: 35px; */
         margin-bottom: 20px;
 
-        .corner-ornament-left {
+        ul {
+            display: none;
+        }
+
+        .corner-ornament-left1 {
             filter: invert(70%) sepia(24%) saturate(876%) hue-rotate(57deg) brightness(81%) contrast(84%);
             height: 250px;
             width: 50%;
             position: absolute;
-            left: 0;
+            /* left: 0; */
+            left: -108px;
+            bottom: -482px;
         }
 
-        .corner-ornament-right {
+        .corner-ornament-right1 {
             filter: invert(70%) sepia(24%) saturate(876%) hue-rotate(57deg) brightness(81%) contrast(84%);
             height: 250px;
             width: 50%;
             position: absolute;
             transform: scaleX(-1);
-            right: 0;
+            /* right: 0; */
+            right: -103px;
+            bottom: -480px;
         }
     }
 
