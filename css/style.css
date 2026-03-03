@@ -28,7 +28,7 @@
 }
 
 * {
-    box-shadow: 0 0 0 1px red inset;
+    /* box-shadow: 0 0 0 1px red inset; */
 }
 
 h1 {
@@ -39,7 +39,9 @@ h1 {
 }
 
 @media screen and (width < 768px) {
-    h1 { font-size: 70px;}
+    h1 {
+        font-size: 70px;
+    }
 }
 
 h2 {
@@ -110,13 +112,15 @@ main {
 
         abbr {
             text-underline-offset: 4px;
-            text-decoration-color:var(--primary-color);
+            text-decoration-color: var(--primary-color);
         }
     }
 
-    
-    @media (min-width: calc(50ch * 2)){
-        .introduction-contact, .introduction-education {
+
+    @media (min-width: calc(50ch * 2)) {
+
+        .introduction-contact,
+        .introduction-education {
             grid-template-columns: repeat(2 1fr);
         }
     }
@@ -164,12 +168,12 @@ main {
     }
 
 
-    .qualities {
-        border: 3px solid var(--primary-color);
-        border-radius: 35px;
+    .vaardigheden {
+        /* border: 3px solid var(--primary-color); */
+        /* border-radius: 35px; */
         margin-bottom: 20px;
 
-        img {
+        .symbol {
             /* border: 10px solid #ba4e5b; */
             height: 50px;
         }
@@ -194,7 +198,7 @@ main {
             overflow: hidden;
             transition: max-height 900ms ease-in-out;
         }
-    
+
         &:hover ul {
             max-height: 175px;
         }
@@ -224,6 +228,10 @@ main {
     .refrences {
         border: 3px solid var(--primary-color);
         border-radius: 35px;
+
+        .row {
+            flex-wrap: nowrap;
+        }
 
         a {
             color: var(--primary-color);
