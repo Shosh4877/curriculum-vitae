@@ -53,9 +53,11 @@
                         <div>
                             <h4>Tech-Academy Groningen 2025 - heden</h4>
                             <p>Web developer</p>
-                            <ol>
-                                <li>Websites bouwen en onderhouden</li>
-                            </ol>
+                            <p>Websites bouwen en onderhouden doormiddel van <abbr
+                                    title="HyperText Markup Language">HTML</abbr>, <abbr
+                                    title="Cascading Style Sheets">CSS</abbr> en <abbr
+                                    title="Content Management System">CMS</abbr></p>
+
                         </div>
                     </div>
                 </div>
@@ -88,7 +90,7 @@
         </section>
 
 
-        <section class="praktijk">
+        <section class="experience">
             <!-- div.container>div.row>div.col-md-12>div.col-md-6>ul>*4-->
             <div class="container work-experience">
                 <div class="row">
@@ -146,6 +148,8 @@
                                 etc.)
                             </li>
                         </ul>
+                        <img src="./images/Corner-Ornament-4-By-RebeccaRead.svg" class="corner-ornament-left1"
+                    alt="corner-ornament-left">
                     </div>
                     <div class="col-md-6 wrap-dementia">
                         <h4>Contact met en steun aan mensen met dementie en hun naasten</h4>
@@ -156,12 +160,12 @@
                             <li>.</li>
                             <li>.</li>
                         </ul>
+                        <img src="./images/Corner-Ornament-4-By-RebeccaRead.svg" class="corner-ornament-right1"
+                    alt="corner-ornament-right">
                     </div>
                 </div>
-                <img src="./images/Corner-Ornament-4-By-RebeccaRead.svg" class="corner-ornament-left1"
-                    alt="corner-ornament-left">
-                <img src="./images/Corner-Ornament-4-By-RebeccaRead.svg" class="corner-ornament-right1"
-                    alt="corner-ornament-right">
+
+
             </div>
         </section>
 
@@ -245,31 +249,12 @@
                     song1.pause();
                     btnPlay.classList.replace("fa-pause", "fa-play");
                 }
-
             }
+        } else {
+            console.error("The elements with class \"song-1\" and/or the class \"btn-play\" doesn't exist.")
         }
-    // dit is een code voor het uitklappen
-    
-        const voluntaryWork = document.querySelector('.voluntary-work');
-        const cornerOrnamentLeft1 = document.querySelector('.corner-ornament-left1');
-        const cornerOrnamentRight2 = document.querySelector('corner-ornament-right1');
 
-        voluntaryWork.addEventListener("mouseover", e => {
-            document.getElementById("voluntaryList1").style.display = "block"
-        })
 
-        voluntaryWork.addEventListener("mouseover", e => {
-            document.getElementById("voluntaryList2").style.display = "block"
-        })
-        cornerOrnamentLeft1.addEventListener("mouseover", e => {
-            
-        })
-
-        cornerOrnamentRight2.addEventListener("mouseover", e=> {
-            
-        })
-
-        
     </script>
 
 </body>
