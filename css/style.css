@@ -75,6 +75,25 @@ header {
 main {
     background-color: #F6F0D7;
 
+    @media (width <= 768px) {
+
+        /* Overschrijf bootstrap kolom padding */
+        .row>div {
+            padding-left: 37px;
+            padding-right: 37px;
+        }
+    }
+
+    @media (width < 576px) {
+
+        /* Overschrijf bootstrap kolom padding */
+        .row>div {
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+    }
+
+
 
     .intro {
         margin-bottom: 20px;
@@ -131,31 +150,23 @@ main {
         }
     }
 
-    @media (min-width: calc(50ch * 2)) {
-
-        .introduction-contact,
-        .introduction-education {
-            grid-template-columns: repeat(2 1fr);
-        }
-    }
-
     .about-me {
-        /* border: 3px solid var(--primary-color); */
         border-radius: 35px;
         margin-bottom: 20px;
         position: relative;
         height: 250px;
 
-        @media (width <=768px) {
+        @media (width <= 768px) {
             height: auto;
         }
-
 
         .corner-ornament-left {
             height: 250px;
             width: 50%;
             position: absolute;
-            left: 0;
+            transition: all 500ms ease-in-out;
+            left: -35px;
+            bottom: -39px
         }
 
         .corner-ornament-right {
@@ -164,10 +175,11 @@ main {
             position: absolute;
             transform: scaleX(-1);
             transition: all 500ms ease-in-out;
-            right: 0;
+            right: -35px;
+            bottom: -39px;
         }
 
-        @media (width <=768px) {
+        @media (width <= 768px) {
             .corner-ornament-left {
                 height: 50px;
                 transform: scaleY(-1);
@@ -214,7 +226,7 @@ main {
         padding: 0 30px 0 30px;
 
         @media (width <=768px) {
-            margin: 50px 0 100px 0;
+            margin: 50px auto 100px auto;
         }
 
         .row {
@@ -259,18 +271,18 @@ main {
         .corner-ornament-left1-top {
             height: 50px;
             position: absolute;
-            left: -25px;
-            bottom: -146px;
+            left: 6px;
             transform: scaleX(-1) rotate(180deg);
             display: none;
+            top: -68px;
         }
 
         .corner-ornament-right1-top {
             height: 50px;
             position: absolute;
-            right: -25px;
-            top: 50px;
-            transform: scaleX(-1) rotate(180deg);
+            right: 6px;
+            top: -68px;
+            transform: scale(-1);
             display: none;
         }
 
@@ -314,13 +326,15 @@ main {
 
         .symbol1,
         .symbol2,
-        .symbol3 {
+        .symbol3,
+        .symbol4 {
             width: 50px;
             padding-right: 20px;
         }
 
         .symbol1,
-        .symbol2 {
+        .symbol2,
+        .symbol3 {
             margin-bottom: 20px;
         }
 
