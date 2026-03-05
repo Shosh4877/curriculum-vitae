@@ -67,9 +67,9 @@ header {
     overflow: hidden;
     background-color: #F6F0D7;
 
-        .developer {
-            margin: 0 0 50px 0;
-        }
+    .developer {
+        margin: 0 0 50px 0;
+    }
 }
 
 main {
@@ -131,184 +131,212 @@ main {
         }
     }
 
-        @media (min-width: calc(50ch * 2)) {
+    @media (min-width: calc(50ch * 2)) {
 
-            .introduction-contact,
-            .introduction-education {
-                grid-template-columns: repeat(2 1fr);
-            }
+        .introduction-contact,
+        .introduction-education {
+            grid-template-columns: repeat(2 1fr);
+        }
+    }
+
+    .about-me {
+        /* border: 3px solid var(--primary-color); */
+        border-radius: 35px;
+        margin-bottom: 20px;
+        position: relative;
+        height: 250px;
+
+        @media (width <=768px) {
+            height: auto;
         }
 
-        .about-me {
-            /* border: 3px solid var(--primary-color); */
-            border-radius: 35px;
-            margin-bottom: 20px;
-            position: relative;
+
+        .corner-ornament-left {
             height: 250px;
+            width: 50%;
+            position: absolute;
+            left: 0;
+        }
 
-            @media (width <=768px) {
-                height: auto;
-            }
+        .corner-ornament-right {
+            height: 250px;
+            width: 50%;
+            position: absolute;
+            transform: scaleX(-1);
+            transition: all 500ms ease-in-out;
+            right: 0;
+        }
 
-
+        @media (width <=768px) {
             .corner-ornament-left {
-                filter: invert(70%) sepia(24%) saturate(876%) hue-rotate(57deg) brightness(81%) contrast(84%);
-                height: 250px;
-                width: 50%;
-                position: absolute;
-                left: 0;
+                height: 50px;
+                transform: scaleY(-1);
             }
 
             .corner-ornament-right {
-                filter: invert(70%) sepia(24%) saturate(876%) hue-rotate(57deg) brightness(81%) contrast(84%);
-                height: 250px;
-                width: 50%;
-                position: absolute;
-                transform: scaleX(-1);
-                transition: all 500ms ease-in-out;
-                right: 0;
-            }
-
-            @media (width <=768px) {
-                .corner-ornament-left {
-                    height: 50px;
-                    transform: scaleY(-1);
-                }
-
-                .corner-ornament-right {
-                    height: 50px;
-                    transform: scaleX(-1) scaleY(-1);
-
-                }
-            }
-
-            .fa-regular,
-            #btn-play {
-                color: var(--primary-color);
+                height: 50px;
+                transform: scaleX(-1) scaleY(-1);
 
             }
+        }
+
+        .fa-regular,
+        #btn-play {
+            color: var(--primary-color);
 
         }
 
-        .photo-iris {
-            width: 220px;
-            border-radius: 110px;
-            height: 220px;
-            object-fit: cover;
-            object-position: 50% 6%;
-            border: 3px solid var(--primary-color);
+    }
+
+    .photo-iris {
+        width: 220px;
+        border-radius: 110px;
+        height: 220px;
+        object-fit: cover;
+        object-position: 50% 6%;
+        border: 3px solid var(--primary-color);
+    }
+
+
+    .vaardigheden {
+        margin-bottom: 20px;
+
+    }
+
+    .work-experience {
+        border: 3px solid var(--primary-color);
+        border-radius: 35px;
+        margin-bottom: 20px;
+    }
+
+    .voluntary-work {
+        margin-bottom: 174px;
+        padding: 0 30px 0 30px;
+
+        @media (width <=768px) {
+            margin: 50px 0 100px 0;
         }
 
-
-        .vaardigheden {
-            margin-bottom: 20px;
-
+        .row {
+            position: relative;
         }
 
-        .work-experience {
-            border: 3px solid var(--primary-color);
-            border-radius: 35px;
-            margin-bottom: 20px;
+        ul {
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 900ms ease-in-out;
         }
 
-        .voluntary-work {
-            margin-bottom: 174px;
-            padding: 0 30px 0 30px;
+        &:hover ul {
+            max-height: 175px;
+        }
 
-            .row {
-                position: relative;
-            }
-
+        @media (width <=768px) {
             ul {
-                max-height: 0px;
-                overflow: hidden;
-                transition: max-height 900ms ease-in-out;
+                max-height: none;
             }
 
-            &:hover ul {
-                max-height: 175px;
+            .col-md-6:first-of-type ul {
+                padding-bottom: 50px;
             }
+        }
 
+        .corner-ornament-left1 {
+            height: 250px;
+            position: absolute;
+            left: -25px;
+            bottom: -146px;
+        }
+
+        .corner-ornament-right1 {
+            height: 250px;
+            position: absolute;
+            transform: scaleX(-1);
+            right: -25px;
+            bottom: -146px;
+        }
+
+        .corner-ornament-left1-top {
+            height: 50px;
+            position: absolute;
+            left: -25px;
+            bottom: -146px;
+            transform: scaleX(-1) rotate(180deg);
+            display: none;
+        }
+
+        .corner-ornament-right1-top {
+            height: 50px;
+            position: absolute;
+            right: -25px;
+            top: 50px;
+            transform: scaleX(-1) rotate(180deg);
+            display: none;
+        }
+
+        @media (width <=768px) {
             .corner-ornament-left1 {
-                filter: invert(70%) sepia(24%) saturate(876%) hue-rotate(57deg) brightness(81%) contrast(84%);
-                height: 250px;
-                position: absolute;
-                left: -25px;
-                bottom: -146px;
+                height: 50px;
+                left: 6px;
+                bottom: -54px;
             }
-
 
             .corner-ornament-right1 {
-                filter: invert(70%) sepia(24%) saturate(876%) hue-rotate(57deg) brightness(81%) contrast(84%);
-                height: 250px;
-                position: absolute;
-                transform: scaleX(-1);
-                right: -25px;
-                bottom: -146px;
+                height: 50px;
+                right: 6px;
+                bottom: -54px;
             }
 
-            @media (width <=768px) {
-                .corner-ornament-left1 {
-                    height: 50px;
-                    left: 40px
-                }
-
-                .corner-ornament-right1 {
-                    height: 50px;
-                    right: 40px;
-                }
+            .corner-ornament-left1-top,
+            .corner-ornament-right1-top {
+                display: block;
             }
-
-
         }
+    }
 
-        .refrences {
+    .refrences {
+
+        padding-bottom: 50px;
+
+        .container {
             border: 3px solid var(--primary-color);
             border-radius: 35px;
-            margin-bottom: 50px;
             column-gap: 20px;
-            /* display: flex; */
+        }
 
-            .row {
-                /* flex-wrap: nowrap; */
-            }
+        a {
+            color: var(--primary-color);
+        }
 
-            a {
-                color: var(--primary-color);
-            }
+        .talen {
+            /* padding-left: 0; */
+        }
 
-            .talen {
-                /* padding-left: 0; */
-            }
+        .symbol1,
+        .symbol2,
+        .symbol3 {
+            width: 50px;
+            padding-right: 20px;
+        }
 
-            .symbol1,
-            .symbol2,
-            .symbol3 {
-                width: 50px;
-                padding-right: 20px;
-            }
+        .symbol1,
+        .symbol2 {
+            margin-bottom: 20px;
+        }
 
-            .symbol1,
-            .symbol2 {
-                margin-bottom: 20px;
-            }
+        h2 {
+            text-align: left;
+        }
 
-            h2 {
-                text-align: left;
-            }
-
-            .vaardigheden {
-                list-style: none;
-                padding-left: 0;
-            }
+        .vaardigheden {
+            list-style: none;
+            padding-left: 0;
         }
     }
+}
 
 
 
-
-
-    footer {
-
-        background-color: #F6F0D7;
-    }
+footer {
+    background-color: #F6F0D7;
+}
