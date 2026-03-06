@@ -75,7 +75,7 @@ header {
 main {
     background-color: #F6F0D7;
 
-    @media (width <= 768px) {
+    @media (width <=768px) {
 
         /* Overschrijf bootstrap kolom padding */
         .row>div {
@@ -102,15 +102,22 @@ main {
     .introduction-contact {
         border: 3px solid var(--primary-color);
         border-radius: 35px;
+        padding: 20px 40px 0 0;
 
         p {
 
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
         a {
             color: var(--primary-color);
+        }
+
+        .qrcode {
+            height: 80px;
+            padding-left: 15px;
         }
     }
 
@@ -129,6 +136,7 @@ main {
     .introduction-education {
         border: 3px solid var(--primary-color);
         border-radius: 35px;
+        padding: 20px 0 0 40px;
 
         div {
             padding-left: 40px;
@@ -152,11 +160,11 @@ main {
 
     .about-me {
         border-radius: 35px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
         position: relative;
         height: 250px;
 
-        @media (width <= 768px) {
+        @media (width <=768px) {
             height: auto;
         }
 
@@ -166,7 +174,8 @@ main {
             position: absolute;
             transition: all 500ms ease-in-out;
             left: -35px;
-            bottom: -39px
+            bottom: -39px;
+            top: 60px;
         }
 
         .corner-ornament-right {
@@ -176,19 +185,20 @@ main {
             transform: scaleX(-1);
             transition: all 500ms ease-in-out;
             right: -35px;
-            bottom: -39px;
+            bottom: -58px;
         }
 
-        @media (width <= 768px) {
+        @media (width <=768px) {
             .corner-ornament-left {
                 height: 50px;
                 transform: scaleY(-1);
+                top: 11px
             }
 
             .corner-ornament-right {
                 height: 50px;
                 transform: scaleX(-1) scaleY(-1);
-
+                top: 11px;
             }
         }
 
@@ -218,7 +228,7 @@ main {
     .work-experience {
         border: 3px solid var(--primary-color);
         border-radius: 35px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 
     .voluntary-work {
@@ -254,14 +264,14 @@ main {
         }
 
         .corner-ornament-left1 {
-            height: 250px;
+            height: 200px;
             position: absolute;
             left: -25px;
             bottom: -146px;
         }
 
         .corner-ornament-right1 {
-            height: 250px;
+            height: 200px;
             position: absolute;
             transform: scaleX(-1);
             right: -25px;
