@@ -168,6 +168,10 @@ main {
             height: auto;
         }
 
+        .text-center {
+            padding: 0 60px 0 60px;
+        }
+
         .corner-ornament-left {
             height: 250px;
             width: 50%;
