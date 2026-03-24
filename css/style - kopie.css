@@ -1,0 +1,391 @@
+@font-face {
+    font-family: "PoiretOne-Regular";
+    src: url(../webfonts/PoiretOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../webfonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "soria-font";
+    src: url(../webfonts/soria-font.ttf);
+}
+
+:root {
+
+    /* color */
+    --primary-color: #6ca651;
+    --secondary-color: #f6f0d7;
+
+    /* font-family */
+    --font-family-text: "soria-font", serif;
+    --font-family-title: "soria-font", serif;
+
+    /* corner-frame */
+
+    /* */
+
+}
+
+* {
+    /* box-shadow: 0 0 0 1px red inset; */
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 100px;
+    font-family: "soria-font", serif, sans-serif;
+}
+
+@media screen and (width < 768px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: "soria-font";
+    margin: 20px 0 20px 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: medium;
+    font-family: "soria-font";
+}
+
+p,
+li {
+    font-family: "Lato-Regular";
+}
+
+header {
+    overflow: hidden;
+    background-color: #F6F0D7;
+
+    .developer {
+        margin: 0 0 50px 0;
+    }
+}
+
+main {
+    background-color: #F6F0D7;
+
+    @media (width <=768px) {
+
+        /* Overschrijf bootstrap kolom padding */
+        .row>div {
+            padding-left: 37px;
+            padding-right: 37px;
+        }
+    }
+
+    @media (width < 576px) {
+
+        /* Overschrijf bootstrap kolom padding */
+        .row>div {
+            padding-left: 14px;
+            padding-right: 14px;
+        }
+    }
+
+
+
+    .intro {
+        margin-bottom: 20px;
+    }
+
+    .introduction-contact {
+        border: 3px solid var(--primary-color);
+        border-radius: 35px;
+        padding: 20px 40px 0 0;
+
+        p {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            color: var(--primary-color);
+        }
+
+        .qrcode {
+            height: 120px;
+            padding-left: 15px;
+        }
+    }
+
+    .introduction-photo {
+        position: relative;
+    }
+
+    .introduction-photo>div {
+        position: absolute;
+        transform: translate(-50%, -50%) scale(1.2);
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+    }
+
+    .introduction-education {
+        border: 3px solid var(--primary-color);
+        border-radius: 35px;
+        padding: 20px 0 0 40px;
+
+        div {
+            padding-left: 40px;
+        }
+
+        abbr {
+            text-underline-offset: 4px;
+            text-decoration-color: var(--primary-color);
+        }
+    }
+
+    @media (width <=768px) {
+        .introduction-contact {
+            padding-bottom: 144px;
+        }
+
+        .introduction-education {
+            padding-top: 130px;
+        }
+    }
+
+    .about-me {
+        border-radius: 35px;
+        margin-bottom: 100px;
+        position: relative;
+        height: 250px;
+
+        @media (width <= 768px) {
+            height: auto;
+        }
+
+        .text-center {
+            padding: 0 60px 0 60px;
+        }
+
+        .corner-ornament-left {
+            height: 250px;
+            width: 50%;
+            position: absolute;
+            transition: all 500ms ease-in-out;
+            left: -35px;
+            bottom: -39px;
+            top: 60px;
+        }
+
+        .corner-ornament-right {
+            height: 250px;
+            width: 50%;
+            position: absolute;
+            transform: scaleX(-1);
+            transition: all 500ms ease-in-out;
+            right: -35px;
+            bottom: -58px;
+        }
+
+        @media (width <= 768px) {
+            .corner-ornament-left {
+                height: 50px;
+                transform: scaleY(-1);
+                top: 11px
+            }
+
+            .corner-ornament-right {
+                height: 50px;
+                transform: scaleX(-1) scaleY(-1);
+                top: 11px;
+            }
+        }
+
+        .fa-regular,
+        #btn-play {
+            color: var(--primary-color);
+
+        }
+
+    }
+
+    .photo-iris {
+        width: 220px;
+        border-radius: 110px;
+        height: 220px;
+        object-fit: cover;
+        object-position: 50% 6%;
+        border: 3px solid var(--primary-color);
+    }
+
+
+    .vaardigheden {
+        margin-bottom: 20px;
+
+    }
+
+    .work-experience {
+        border: 3px solid var(--primary-color);
+        border-radius: 35px;
+        margin-bottom: 35px;
+    }
+
+    .voluntary-work {
+        margin-bottom: 174px;
+        padding: 0 30px 0 30px;
+
+        @media (width <= 768px) {
+            margin: 50px auto 100px auto;
+        }
+
+        .row {
+            position: relative;
+        }
+
+        ul {
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 900ms ease-in-out;
+        }
+
+        &:hover ul {
+            max-height: 175px;
+        }
+
+        @media (width <=768px) {
+            ul {
+                max-height: none;
+            }
+
+            .col-md-6:first-of-type ul {
+                padding-bottom: 50px;
+            }
+        }
+
+        .corner-ornament-left1 {
+            height: 200px;
+            position: absolute;
+            left: -25px;
+            bottom: -146px;
+        }
+
+        .corner-ornament-right1 {
+            height: 200px;
+            position: absolute;
+            transform: scaleX(-1);
+            right: -25px;
+            bottom: -146px;
+        }
+
+        .corner-ornament-left1-top {
+            height: 50px;
+            position: absolute;
+            left: 6px;
+            transform: scaleX(-1) rotate(180deg);
+            display: none;
+            top: -68px;
+        }
+
+        .corner-ornament-right1-top {
+            height: 50px;
+            position: absolute;
+            right: 6px;
+            top: -68px;
+            transform: scale(-1);
+            display: none;
+        }
+
+        @media (width <=768px) {
+            .corner-ornament-left1 {
+                height: 50px;
+                left: 6px;
+                bottom: -54px;
+            }
+
+            .corner-ornament-right1 {
+                height: 50px;
+                right: 6px;
+                bottom: -54px;
+            }
+
+            .corner-ornament-left1-top,
+            .corner-ornament-right1-top {
+                display: block;
+            }
+        }
+    }
+
+    .refrences {
+
+        padding-bottom: 50px;
+
+        .container {
+            border: 3px solid var(--primary-color);
+            border-radius: 35px;
+            column-gap: 20px;
+        }
+
+        a {
+            color: var(--primary-color);
+        }
+
+        .talen {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .language-flag {
+            width: 50px;
+            padding-right: 20px;
+        }
+
+        .hobbies {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .hobby-knitting,
+        .hobby-puzzel {
+            width: 50px;
+            padding-right: 20px;
+        }
+
+        .symbol1,
+        .symbol4 {
+            width: 50px;
+            padding-right: 20px;
+        }
+
+        .symbol1,
+        .symbol2,
+        .symbol3 {
+            margin-bottom: 20px;
+        }
+
+        .symbol3,
+        .symbol2 {
+            font-size: 30px;
+            margin-right: 20PX;
+        }
+
+        h2 {
+            text-align: left;
+        }
+
+        .vaardigheden {
+            list-style: none;
+            padding-left: 0;
+        }
+    }
+}
+
+
+
+footer {
+    background-color: #F6F0D7;
+}
