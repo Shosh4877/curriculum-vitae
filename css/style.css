@@ -93,10 +93,25 @@ main {
         }
     }
 
-
+    @media (min-width: 1024px) {
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
 
     .intro {
         margin-bottom: 20px;
+    }
+
+     @media (min-width: 1024px) {
+        .intro {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
     }
 
     .introduction-contact {
@@ -121,6 +136,7 @@ main {
         }
     }
 
+   
     .introduction-photo {
         position: relative;
     }
