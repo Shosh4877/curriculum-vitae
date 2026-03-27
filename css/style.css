@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: "Lato-Regular";
-    src: url(../webfonts/Lato-Regular.ttf);
+    src: url(../webfonts/lato-regular.ttf);
 }
 
 @font-face {
@@ -93,18 +93,18 @@ main {
         }
     }
 
-    @media (min-width: 1024px) {
+    /*@media (min-width: 1024px) {
         body {
             max-width: 1200px;
             margin: 0 auto;
         }
-    }
+    }*/
 
     .intro {
         margin-bottom: 20px;
     }
 
-     @media (min-width: 1024px) {
+     /*@media (min-width: 1024px) {
         .intro {
             padding: 20px;
         }
@@ -112,7 +112,7 @@ main {
         h1 {
             font-size: 24px;
         }
-    }
+    }*/
 
     .introduction-contact {
         border: 3px solid var(--primary-color);
