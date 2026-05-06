@@ -63,12 +63,21 @@ li {
     font-family: "Lato-Regular";
 }
 
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    filter: brightness(55%);
+}
+
 header {
     overflow: hidden;
     background-color: #F6F0D7;
 
-    .developer {
+    h2.developer {
         margin: 0 0 50px 0;
+        font-size: 50px;
     }
 }
 
@@ -126,12 +135,14 @@ main {
             align-items: center;
         }
 
-        a {
-            color: var(--primary-color);
+
+
+        .fa-linkedin-in {
+            font-size: 30px;
         }
 
         .qrcode {
-            height: 120px;
+            height: 200px;
             padding-left: 15px;
         }
     }
@@ -346,10 +357,6 @@ main {
             column-gap: 20px;
         }
 
-        a {
-            color: var(--primary-color);
-        }
-
         .talen {
             list-style-type: none;
             padding: 0;
@@ -375,6 +382,7 @@ main {
         .symbol4 {
             width: 50px;
             padding-right: 20px;
+            margin-right: 7px;
         }
 
         .symbol1,
